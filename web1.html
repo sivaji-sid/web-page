@@ -1,0 +1,85 @@
+﻿<html>
+    <head>
+        <title>My Page</title>
+        <link rel="StyleSheet" href="style1.css">
+    </head>
+<body>
+    <div Class="img">
+    </div>
+    <div class="header">
+        <h1>Thought<span style="color: coral;">Clan</span></h1>
+    </div>
+<div class="head">
+    <ul>
+        <li><a href="veg.html">HOME</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">PROJECTS</a></li>
+        <li><a href="#">CLIENTS</a></li>
+        <li><a href="#">MEETTHECLAN</a></li>
+        <li><a href="#">FUN</a></li>
+        <li><a href="#">CONTACT US</a></li>
+    </ul>
+</div>
+<div Class="cont">
+    <br><br>
+    <br>
+    <br>
+    <br><br><br><br><br><br><br>
+    <h3>ThoughtClan is a Technology company, that solves critical business <br>problems, on time and budget.
+<br>Our 100+ development team focus on Data Science, Digital <br>Commerce and Digital Engineering services.</h3>
+</div>
+<div class="slideshow">
+    <div class="mySlides">
+      <img src="C:\Users\user\Pictures\Saved Pictures\cloud.jpg" height="400px" width="100%">
+    </div>
+    <div class="mySlides">   
+      <img src="C:\Users\user\Pictures\Saved Pictures\leaf.jpg" height="400px" width="100%">  
+    </div>
+    <div class="mySlides">  
+      <img src="C:\Users\user\Pictures\Saved Pictures\chair.jpg" height="400px" width="100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) 
+      {
+          slideIndex = 1
+      }    
+      if (n < 1)
+       {
+           slideIndex = slides.length
+       }
+      for (i = 0; i < slides.length; i++) 
+      {
+          slides[i].style.display = "none";  
+      }
+      slides[slideIndex-1].style.display = "block";  
+    }
+    </script>
+<div Class="le">
+<button type="button">LEARN MORE</button>
+</div>
+<div Class="bot">
+     
+</div>
+<div class="ex">
+<ul>
+    <li>Years of Age</li>
+    <li>Happy Clients</li>
+    <li>Projects</li>
+    <li>Development Days</li>
+</ul>
+</div>
+</body>
+</html>
