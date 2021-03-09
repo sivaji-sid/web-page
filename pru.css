@@ -1,0 +1,267 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+   
+}
+.st{
+    float: left;
+    padding-left: 20px;
+    height: 57px;
+    background-attachment: fixed;
+}
+.st h1{
+    font-size: 35px;
+    color:tomato;
+    line-height: 57px;
+}
+@media screen and (max-width: 770px){
+  .st{
+    height: 30px;
+  }
+  .st h1{
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+.star{
+    float: right;
+    background-attachment: fixed;
+}
+.star ul{
+    display: inline-block;
+    list-style-type: none;
+}
+.star ul li{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+}
+.star ul li a{
+    text-decoration: none;
+}
+.star ul li a:hover{
+    color: yellowgreen;
+}
+.star ul li a:active{
+    color: tomato;
+}
+@media screen and (max-width: 770px){
+  .star ul li{
+    padding: 5px;
+    font-size: 10px;
+  }
+}
+.star1{
+    height: 100px;
+    width: 100%;
+    background-color: turquoise;
+}
+.star1 h1{
+    line-height: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+@media screen and (max-width: 770px){
+  .star1{
+    width: 100%;
+    height: 60px;
+    padding: 10px 0;
+  }
+  .star1 h1{
+    line-height:60px;
+    font-size: 15px;
+  }
+}
+.star2{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.star2 ul{
+    display: inline-block;
+    list-style-type: none;
+}
+.star2 ul li{
+    display: inline-block;
+    padding: 10px;
+}
+.star2 ul li h3{
+    text-align: center;
+    font-weight: lighter;
+}
+.star2 ul li h1{
+  text-align: center;
+  margin-top: 10px;
+}
+.star2 ul li h1 input{
+  align-items: center;
+  background: chartreuse;
+  margin: 0 auto;
+  border-radius: 5px;
+  text-align: center;
+}
+@media screen and (max-width: 770px){
+      .star2 ul li img{
+        height: 100px;
+        width: 100%;
+	}
+}
+.star3{
+  padding-left: 20px;
+}
+.star3 ul{
+  list-style-type: none;
+}
+.star3 ul li{
+  display: inline-block;
+}
+.star3 ul li h3{
+   
+}
+.star3 ul li h1{
+   text-align: center;
+}
+.star3 ul li h1 input{
+  background: chartreuse;
+}
+@media screen and (max-width: 770px){
+        .star3{
+           
+          padding: 10px;
+          height: 300px;
+          width: 100%;
+        }
+}
+/*
+.star4{
+    background-color: burlywood;
+    height: 300px;
+    width: 40%;
+    float: right;
+    padding-right: 20px;
+    margin-top: 100;
+}
+.star4 h1{
+  text-align: center;
+  margin-top: 10px;
+}
+.star4 h1 input{
+  background: chartreuse;
+  border-radius: 5px;
+}
+@media screen and (max-width: 770px){
+        .satr4{
+          height: 300px;
+          width: 100%;
+        }
+}*/
+
+.head28{
+    padding-right: 80px;
+    padding-left: 80px;
+    list-style-type: none;
+    height: 1000px;
+     
+}
+.head28 h1{
+    color: gold;
+}
+.head28 h3{
+    font-weight: lighter;
+}
+.slider{
+    width: 1200px;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 60px;
+  
+}
+
+.slides{
+    width: 540%;
+    height: 100%;
+    display: flex;
+ 
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+   
+  height: 100%;
+}
+
+.slide img{
+   width: 100%;
+   height: 700px;
+}
+
+/*css for manual slide navigation*/
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -383px;
+    display: flex;
+    justify-content: center;
+    padding-left: 200px;
+  }
+  .manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .manual-btn:not(:last-child){
+    margin-right: 5px;
+  }
+  .manual-btn:hover{
+    background: #40D3DC;
+  }
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+
+  /*css for automatic navigation*/
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 617px;
+    padding-left: 200px;
+  }
+  .navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  .navigation-auto div:not(:last-child){
+    margin-right: 5px;
+  }
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+  }
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+  }
